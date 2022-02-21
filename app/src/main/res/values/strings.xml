@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Max Banking</string>
+
+    <string name="alex">
+     The robot clicked disapprovingly, gurgled briefly inside its cubical interior and extruded a pony glass of brownish liquid. "Sir, you will undoubtedly end up in a drunkard's grave, dead of hepatic cirrhosis," it informed me virtuously as it returned my ID card. I glared as I pushed the glass across the table
+
+
+    </string>
+    <string name="ana">
+        She nervously peered over the edge. She understood in her mind that the view was supposed to be beautiful, but all she felt was fear. There had always been something about heights that disturbed her, and now she could feel the full force of this unease. She reluctantly crept a little closer with the encouragement of her friends as the fear continued to build. She couldnt help but feel that something horrible was about to happen
+
+    </string>
+    <string name="charles">
+        It was a concerning development that he couldnt get out of his mind. Hed had many friends throughout his early years and had fond memories of playing with them, but he couldnt understand how it had all stopped. There was some point as he grew up that he played with each of his friends for the very last time, and he had no idea that it would be the last.
+
+    </string>
+    <string name="christina">
+        There were about twenty people on the dam. Most of them were simply walking and getting exercise. There were a few who were fishing. There was a family who had laid down a blanket and they were having a picnic. It was like this most days and nothing seemed out of the ordinary. The problem was that nobody noticed the water leaking through the dam wall.
+
+
+    </string>
+    <string name="james">
+        Dave found joy in the daily routine of life. He awoke at the same time, ate the same breakfast and drove the same commute. He worked at a job that never seemed to change and he got home at 6 pm sharp every night. It was who he had been for the last ten years and he had no idea that was all about to change.
+
+    </string>
+    <string name="jane">
+         There was nothing to indicate Nancy was going to change the world. She looked like an average girl going to an average high school. It was the fact that everything about her seemed average that would end up becoming her superpower.
+    </string>
+    <string name="jennifer">
+        Indescribable oppression, which seemed to generate in some unfamiliar part of her consciousness, filled her whole being with a vague anguish. It was like a shadow, like a mist passing across her soul\'s summer day. It was strange and unfamiliar; it was a mood. She did not sit there inwardly upbraiding her husband, lamenting at Fate, which had directed her footsteps to the path which they had taken. She was just having a good cry all to herself. The mosquitoes made merry over her, biting her firm, round arms and nipping at her bare insteps.
+
+
+    </string>
+    <string name="john">
+        Peter always saw the world in black and white. There were two choices for every situation and you had to choose one of them. It was therefore terribly uncomfortable for him to spend time with Ashley. She saw the world in shades of gray with hundreds of choices to choose from in every situation.
+
+
+    </string>
+    <string name="laurel">
+        The song came from the bathroom belting over the sound of the shower\'s running water. It was the same way each day began since he could remember. It listened intently and concluded that the singing today was as terrible as it had ever been.
+
+
+    </string>
+    <string name="warren">
+        The headphones were on. They had been utilized on purpose. She could hear her mom yelling in the background, but couldn\'t make out exactly what the yelling was about. That was exactly why she had put them on. She knew her mom would enter her room at any minute, and she could pretend that she hadn\'t heard any of the previous yelling.
+
+
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+</resources>
