@@ -1,4 +1,4 @@
-package com.maxwell.recyclerview.ui.auth
+package com.maxwell.recyclerview.ui.auth.authfragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

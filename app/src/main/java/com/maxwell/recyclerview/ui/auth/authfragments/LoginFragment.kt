@@ -1,4 +1,4 @@
-package com.maxwell.recyclerview.ui.auth
+package com.maxwell.recyclerview.ui.auth.authfragments
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,9 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.maxwell.recyclerview.MainActivity
-import com.maxwell.recyclerview.R
 import com.maxwell.recyclerview.databinding.FragmentLoginBinding
-import com.maxwell.recyclerview.databinding.FragmentSecondBinding
 
 class LoginFragment : Fragment() {
 
@@ -25,6 +23,8 @@ class LoginFragment : Fragment() {
         return binding.root
 
     }
+
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
