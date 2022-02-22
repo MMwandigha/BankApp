@@ -26,6 +26,7 @@ class RegisterFragment : Fragment() {
         return binding.root
         checkAllFields()
 
+
     }
 
     private fun checkAllFields(): Boolean {
@@ -49,10 +50,17 @@ class RegisterFragment : Fragment() {
         if (registerPassword.isEmpty()) {
             registerPassword.setError("Password is required")
             return false
-
         } else if (registerPassword.length < 8) {
             registerPassword.setError("Password must be minimum 8 characters")
             return false
+        }
+
+
+        if (registerConfirmPassword.isEmpty()) {
+            registerConfirmPassword.setError("Tis field is required")
+            return false
+        } else if (registerConfirmPassword != registerPassword){
+            registerConfirmPassword.setError("This password does not match")
         }
 
         if (registerPhone.length == 0) {
