@@ -19,7 +19,7 @@
         </activity>
 
         <activity
-            android:name=".UsersProfile"
+            android:name=".ui.profile.UsersProfile"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

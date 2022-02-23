@@ -1,20 +1,15 @@
 package com.maxwell.recyclerview.ui.home
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.maxwell.recyclerview.R
-import com.maxwell.recyclerview.UsersProfile
 import com.maxwell.recyclerview.adapter.UsersAdapter
 import com.maxwell.recyclerview.adapter.listener.OnItemUserClickListener
-import com.maxwell.recyclerview.databinding.ActivityMainBinding
 import com.maxwell.recyclerview.databinding.FragmentMainBinding
 import com.maxwell.recyclerview.model.UsersModel
 
