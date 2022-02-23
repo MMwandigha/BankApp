@@ -28,7 +28,7 @@ class LoginFragment : Fragment() {
         // Inflate the layout for this fragment
         binding= FragmentLoginBinding.inflate(inflater, container, false)
 
-        checkAllFields()
+
         return binding.root
 
 
@@ -54,7 +54,11 @@ class LoginFragment : Fragment() {
         }
 
         binding.btnLogin.setOnClickListener {
-            startActivity(Intent(requireActivity(), MainActivity:: class.java))
+            if (checkAllFields()){
+                startActivity(Intent(requireActivity(), MainActivity:: class.java))
+            }
+
+
         }
 
     }
@@ -72,7 +76,7 @@ class LoginFragment : Fragment() {
             binding.etxtPassword.error = "Password must be minimum 8 characters"
             return false
         }
-        if (loginPhone.length == 0) {
+        if (loginPhone.isEmpty()) {
             binding.etxtPhoneNumber.error = "Phone Number is Required"
             return false
 
@@ -80,7 +84,8 @@ class LoginFragment : Fragment() {
             binding.etxtPhoneNumber.error = "Phone Number should have 10 digits"
 
             return false
-        }else{
+        }
+            else{
             return true
         }
     }
