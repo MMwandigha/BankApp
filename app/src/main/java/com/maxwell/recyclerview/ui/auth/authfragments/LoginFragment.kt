@@ -9,7 +9,9 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.MutableLiveData
+import androidx.navigation.findNavController
 import com.maxwell.recyclerview.MainActivity
+import com.maxwell.recyclerview.R
 import com.maxwell.recyclerview.databinding.FragmentLoginBinding
 
 class LoginFragment : Fragment() {
@@ -25,92 +27,62 @@ class LoginFragment : Fragment() {
 
         // Inflate the layout for this fragment
         binding= FragmentLoginBinding.inflate(inflater, container, false)
+
+        checkAllFields()
         return binding.root
-        PasswordFocusListener()
-        PhoneFocusListener()
+
+
+//        loadFragment()
 
     }
+
+//    private fun loadFragment(bi: RegisterFragment) {
+//        val transaction = supportFragmentManager.beginTransaction()
+//        transaction.replace(binding.txtNotRegistered, LoginFragment)
+//        transaction.disallowAddToBackStack()
+//        transaction.commit()
+//    }
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.btnLogin.setOnClickListener{
+        binding.txtNotRegistered.setOnClickListener{
 
-            startActivity(Intent(requireActivity(), MainActivity::class.java))
+            view.findNavController().navigate(R.id.action_loginFragment_to_registerFragment2)
 
         }
 
-
+        binding.btnLogin.setOnClickListener {
+            startActivity(Intent(requireActivity(), MainActivity:: class.java))
+        }
 
     }
 
-    private fun submitForm(){
-        val validPassword =binding.passwordContainer.helperText == null
-        val validPhone =binding.phoneContainer.helperText == null
+    private fun checkAllFields(): Boolean {
 
-        if(validPhone && validPassword)
-            resetForm()
-        else
-            invalidForm()
+        val loginPassword = binding.etxtPassword.text.toString()
+        val loginPhone = binding.etxtPhoneNumber.text.toString()
 
-    }
 
-    private fun invalidForm(){
-        var message = ""
-        if(binding.phoneContainer.helperText == null)
-            message += "\n\n"
-    }
-
-    //Password
-
-    private fun PasswordFocusListener(){
-        binding.etxtPassword.setOnFocusChangeListener{ _, focused ->
-            if(!focused){
-                binding.txtPassword.helperText = validPassword()
-            }
-
+        if (loginPassword.isEmpty()) {
+            binding.etxtPassword.error = "Password is required"
+            return false
+        } else if (loginPassword.length < 8) {
+            binding.etxtPassword.error = "Password must be minimum 8 characters"
+            return false
         }
-    }
+        if (loginPhone.length == 0) {
+            binding.etxtPhoneNumber.error = "Phone Number is Required"
+            return false
 
-    private fun validPassword():String?{
-        val passwordText = binding.etxtPassword.text.toString()
-        if(passwordText.length <8){
-            return "Minimum 8 character Password"
-        }
-        if(passwordText.matches(".*[A-Z].*".toRegex())) {
-            return "Must Contain 1 upper-case Character"
-        }
-        if(passwordText.matches(".*[a-z].*".toRegex())) {
-            return "Must Contain 1 lower-case Character"
-        }
-        if(passwordText.matches(".*[@#\$%^&+=].*".toRegex())){
-            return "Must Contain 1 special character (@#\$%^&+=)"
-        }
-        return null
-    }
+        } else if (loginPhone.length != 10) {
+            binding.etxtPhoneNumber.error = "Phone Number should have 10 digits"
 
-    //Phone
-
-    private fun PhoneFocusListener(){
-        binding.etxtPhoneNumber.setOnFocusChangeListener{ _, focused ->
-            if(!focused){
-                binding.phoneContainer.helperText = validPhone()
-            }
-
+            return false
+        }else{
+            return true
         }
-    }
-
-    private fun validPhone():String?{
-        val phoneText = binding.etxtPhoneNumber.text.toString()
-        if(!phoneText.matches(".*[0-9].*".toRegex())){
-            return "Must be all digits"
-        }
-        if(phoneText.length != 10){
-            return "Must be 10 digits"
-        }
-        return null
-
     }
 
 

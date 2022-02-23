@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import com.maxwell.recyclerview.R
 import com.maxwell.recyclerview.databinding.FragmentRegisterBinding
 
@@ -22,11 +23,24 @@ class RegisterFragment : Fragment() {
 
 
         binding = FragmentRegisterBinding.inflate(inflater, container, false)
-
-        return binding.root
         checkAllFields()
+        return binding.root
 
 
+
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.txtAlreadyRegistered.setOnClickListener {
+
+            view.findNavController().navigate(R.id.action_registerFragment_to_loginFragment)
+        }
+
+        binding.btnRegister.setOnClickListener {
+            view.findNavController().navigate(R.id.action_registerFragment_to_loginFragment)
+        }
     }
 
     private fun checkAllFields(): Boolean {
@@ -39,36 +53,36 @@ class RegisterFragment : Fragment() {
 
 
         if (registerName.isEmpty()) {
-            registerName.setError("This field is required")
+            binding.etxtUsername.error = "This field is required"
             return false
         }
 
         if (registerEmail.isEmpty()) {
-            registerEmail.setError("Email is required")
+            binding.etxtEmail.error = "Email is required"
             return false
         }
         if (registerPassword.isEmpty()) {
-            registerPassword.setError("Password is required")
+            binding.etxtPassword.error = "Password is required"
             return false
         } else if (registerPassword.length < 8) {
-            registerPassword.setError("Password must be minimum 8 characters")
+            binding.etxtPassword.error = "Password must be minimum 8 characters"
             return false
         }
 
-
         if (registerConfirmPassword.isEmpty()) {
-            registerConfirmPassword.setError("Tis field is required")
+            binding.etxtConfirmPassword.error = "Tis field is required"
             return false
+
         } else if (registerConfirmPassword != registerPassword){
-            registerConfirmPassword.setError("This password does not match")
+            binding.etxtConfirmPassword.error = "This password does not match"
         }
 
         if (registerPhone.length == 0) {
-            registerPhone.setError("Phone Number is Required")
+            binding.etxtPhoneNumber.error = "Phone Number is Required"
             return false
 
         } else if (registerPhone.length != 10) {
-            registerPhone.setError("Phone Number should have 10 digits")
+            binding.etxtPhoneNumber.error = "Phone Number should have 10 digits"
 
             return false
         }else{
