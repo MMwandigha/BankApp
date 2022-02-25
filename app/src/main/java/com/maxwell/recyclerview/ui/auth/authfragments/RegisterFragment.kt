@@ -35,12 +35,16 @@ class RegisterFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.txtAlreadyRegistered.setOnClickListener {
+            if (checkAllFields()) {
 
-            view.findNavController().navigate(R.id.action_registerFragment_to_loginFragment)
+                view.findNavController().navigate(R.id.action_registerFragment_to_loginFragment)
+            }
         }
 
         binding.btnRegister.setOnClickListener {
-            view.findNavController().navigate(R.id.action_registerFragment_to_loginFragment)
+            if (checkAllFields()) {
+                view.findNavController().navigate(R.id.action_registerFragment_to_loginFragment)
+            }
 
         }
 

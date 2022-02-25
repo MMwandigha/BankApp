@@ -18,7 +18,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_baseline_account_circle_24" />
+            app:srcCompat="@drawable/ic_baseline_account_balance_24" />
 
         <TextView
             android:id="@+id/txtAppName"
@@ -47,64 +47,54 @@
             app:layout_constraintTop_toBottomOf="@+id/txtAppName" />
 
 
-        <TextView
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/txtPhoneNumber"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="276dp"
-            android:text="Phone Number"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtLoginPage" />
-
-        <EditText
-            android:id="@+id/etxtPhoneNumber"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="32dp"
-            android:ems="10"
-            android:hint="Enter your Phone Number Here"
-            android:inputType="phone"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtPhoneNumber" />
+            app:layout_constraintTop_toBottomOf="@+id/txtLoginPage">
 
-        <TextView
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etxtPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/txtPassword"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="300dp"
-            android:text="Password"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etxtPhoneNumber" />
-
-        <EditText
-            android:id="@+id/etxtPassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginStart="32dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
             android:layout_marginTop="16dp"
-            android:layout_marginEnd="32dp"
-            android:ems="10"
-            android:hint="Enter your Password Here"
-            android:inputType="textPassword"
+            android:layout_marginEnd="24dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+            app:layout_constraintTop_toBottomOf="@+id/txtPhoneNumber">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etxtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
 
         <TextView
             android:id="@+id/forgotPassword"
@@ -119,7 +109,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etxtPassword" />
+            app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
 
 
         <Button
@@ -127,7 +117,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="40dp"
             android:layout_marginEnd="32dp"
             android:text="Login"
             app:layout_constraintEnd_toEndOf="parent"
