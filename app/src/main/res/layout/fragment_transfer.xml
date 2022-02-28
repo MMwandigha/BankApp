@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.dashboard.TransferFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="362dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="86dp">
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/MyCardView2"
+                android:layout_width="301dp"
+                android:layout_height="185dp"
+                android:background="#6C7BC6"
+                app:cardBackgroundColor="#6C7BC6"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.173"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="88dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardBackgroundColor="#8A9CF4">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="188dp">
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="28dp"
+                            android:text="Premium Bank"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:text="Maxwell Mwandigha"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:layout_editor_absoluteY="110dp" />
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0123 4567 7890 5766"
+                            android:textSize="10sp"
+                            tools:layout_editor_absoluteX="32dp"
+                            tools:layout_editor_absoluteY="139dp" />
+
+                        <TextView
+                            android:id="@+id/textView19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="16dp"
+                            android:text="09/31"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            tools:layout_editor_absoluteY="137dp" />
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="51dp"
+                            android:layout_height="38dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:src="@drawable/mastercard"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:text="Transfer Data"
+            android:textColor="#0A052B"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtPaymentMethods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:text="Payment Method"
+            android:textColor="#0A052B"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="57dp" />
+
+        <TextView
+            android:id="@+id/txtRecipientData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recipient Data"
+            android:textColor="#0A052B"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="44dp"
+            tools:layout_editor_absoluteY="280dp" />
+
+        <TextView
+            android:id="@+id/txtDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:textColor="#0A052B"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="44dp"
+            tools:layout_editor_absoluteY="484dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColorHint="#170C63"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="308dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Credit Card Number"
+                android:textColor="#0A052B"
+                android:textColorHint="#0A052B" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColorHint="#170C63"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="376dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|left"
+                android:hint="Address"
+                android:inputType="textMultiLine"
+                android:maxLines="4"
+                android:minLines="3"
+                android:scrollbars="vertical"
+                android:textColor="#0A052B" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColorHint="#170C63"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="503dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|left"
+                android:hint="Transfer Note"
+                android:inputType="textMultiLine"
+                android:maxLines="4"
+                android:minLines="3"
+                android:scrollbars="vertical" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColorHint="#170C63"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="612dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Amount" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSend"
+            android:layout_width="235dp"
+            android:layout_height="54dp"
+            android:layout_marginEnd="16dp"
+            android:text="Send"
+            app:backgroundTint="#24D651"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="694dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCancel"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="116dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="16dp"
+            android:text="Cancel"
+            android:textColor="#7A7A7A"
+            app:cornerRadius="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:strokeColor="#D1D1D1"
+            app:strokeWidth="2dp"
+            tools:layout_editor_absoluteY="694dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_baseline_close_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>
