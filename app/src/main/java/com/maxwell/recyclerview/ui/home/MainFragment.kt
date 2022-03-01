@@ -11,13 +11,12 @@ import com.maxwell.recyclerview.R
 import com.maxwell.recyclerview.adapter.UsersAdapter
 import com.maxwell.recyclerview.adapter.listener.OnItemUserClickListener
 import com.maxwell.recyclerview.databinding.FragmentMainBinding
-import com.maxwell.recyclerview.model.CardModel
 import com.maxwell.recyclerview.model.UsersModel
 
 
 class MainFragment : Fragment(),OnItemUserClickListener {
     private lateinit var newArrayList: ArrayList<UsersModel>
-    private lateinit var newArrayList2: ArrayList<CardModel>
+
 
     //Added
     private lateinit var binding: FragmentMainBinding
@@ -27,11 +26,6 @@ class MainFragment : Fragment(),OnItemUserClickListener {
     lateinit var titleEmail : Array <String>
     lateinit var titleDesc : Array <String>
 
-    // Added(28/02/2022)
-    lateinit var cardImage : Array <Int>
-    lateinit var cardName : Array <String>
-    lateinit var cardOwner : Array <String>
-    lateinit var cardNumber : Array <Int>
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
