@@ -1,19 +1,24 @@
 package com.maxwell.recyclerview.ui.home.dashboard
 
+import android.app.ActionBar
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.setPadding
+import androidx.viewpager.widget.ViewPager
 import com.maxwell.recyclerview.R
-import com.maxwell.recyclerview.adapter.listener.CardAdapter
+import com.maxwell.recyclerview.adapter.CardAdapter
 import com.maxwell.recyclerview.databinding.FragmentTransferBinding
 import com.maxwell.recyclerview.model.CardModel
+import kotlinx.android.synthetic.main.fragment_transfer.*
 
 
 class TransferFragment : Fragment() {
 
     private lateinit var myModelList: ArrayList<CardModel>
+    private lateinit var actionBar: ActionBar
 
 //    private lateinit var cardAdapter: cardAdapter
     private lateinit var binding: FragmentTransferBinding
@@ -42,6 +47,29 @@ class TransferFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         loadCards()
+
+        viewpager.addOnPageChangeListener(object :ViewPager.OnPageChangeListener{
+            override fun onPageScrollStateChanged(state: Int) {
+                TODO("Not yet implemented")
+            }
+
+
+            override fun onPageScrolled(
+                position: Int,
+                positionOffset: Float,
+                positionOffsetPixels: Int
+            ) {
+
+            }
+
+            override fun onPageSelected(position: Int) {
+
+            }
+
+
+        })
+
+
     }
 
     private fun loadCards() {
@@ -83,6 +111,13 @@ class TransferFragment : Fragment() {
 
         )
         bcardColor = arrayOf(
+            "D4AF37",
+            "00AFE9",
+            "117ACA",
+            "DB230B",
+            "64A8F0",
+            "FCB70A",
+            "231F20"
 
         )
         bcardImage = arrayOf(
@@ -101,7 +136,9 @@ class TransferFragment : Fragment() {
     }
 
     private fun getCardData(){
-        val CardAdapter = CardAdapter(requireContext(), CardModel.addListOfCardModel())
+        val cardAdapter = CardAdapter(requireContext(), CardModel.addListOfCardModel())
+        viewpager.adapter = cardAdapter
+        viewpager.setPadding(100,0,100,0)
     }
 
 

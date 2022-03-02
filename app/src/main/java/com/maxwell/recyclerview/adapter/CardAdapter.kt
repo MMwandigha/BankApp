@@ -1,4 +1,4 @@
-package com.maxwell.recyclerview.adapter.listener
+package com.maxwell.recyclerview.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
