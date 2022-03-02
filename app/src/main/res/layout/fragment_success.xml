@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SuccessFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_baseline_close_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSend2"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            android:text="BACK TO HOME SCREEN"
+            app:backgroundTint="#24D651"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your transfer has been"
+            android:textSize="24dp"
+            tools:layout_editor_absoluteX="52dp"
+            tools:layout_editor_absoluteY="506dp" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="304dp"
+            android:layout_height="132dp"
+            android:text="Processed Succesfully"
+            android:textColor="#23AE46"
+            android:textSize="45dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="52dp"
+            tools:layout_editor_absoluteY="538dp" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="422dp"
+            android:layout_height="379dp"
+            android:layout_marginEnd="44dp"
+            android:src="@drawable/quadrant"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="-67dp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="296dp"
+            android:layout_height="277dp"
+            android:src="@drawable/circle"
+            tools:layout_editor_absoluteX="-74dp"
+            tools:layout_editor_absoluteY="153dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

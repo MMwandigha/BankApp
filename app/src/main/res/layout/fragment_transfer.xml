@@ -44,6 +44,7 @@
             android:orientation="horizontal"
             android:clipToPadding="false"
             android:clipChildren="false"
+            android:contentDescription="Display of Bank Cards"
             app:layout_constraintBottom_toTopOf="@+id/txtRecipientData"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -57,12 +58,14 @@
             android:id="@+id/txtRecipientData"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="12dp"
             android:text="Recipient Data"
             android:textColor="#0A052B"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
-            tools:layout_editor_absoluteX="44dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.106"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/txtDetails"
@@ -71,8 +74,10 @@
             android:text="Details"
             android:textColor="#0A052B"
             android:textStyle="bold"
-            tools:layout_editor_absoluteX="44dp"
-            tools:layout_editor_absoluteY="509dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.091"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="517dp" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayout"
