@@ -50,7 +50,7 @@ class TransferFragment : Fragment() {
 
         viewpager.addOnPageChangeListener(object :ViewPager.OnPageChangeListener{
             override fun onPageScrollStateChanged(state: Int) {
-                TODO("Not yet implemented")
+
             }
 
 
@@ -111,8 +111,8 @@ class TransferFragment : Fragment() {
 
         )
         bcardColor = arrayOf(
-            "D4AF37",
-            "00AFE9",
+            "2345669",
+            "2345789",
             "117ACA",
             "DB230B",
             "64A8F0",
