@@ -36,7 +36,7 @@ class CardAdapter(private val context: Context, private val myModelArrayList: Ar
         view.cardNumber.text = bcardnumber
         view.cardExpiry.text = bcardexpiry
         view.cardName.text = bcardname
-        view.cardColor.setBackgroundColor(bcardcolor)
+        view.cardColor.setBackgroundColor(bcardcolor.toInt())
 
         view.setOnClickListener {
             Toast.makeText(context, "$bcardname \n $bcardholder \n $bcardnumber", Toast.LENGTH_SHORT).show()

@@ -28,7 +28,8 @@
             android:layout_marginStart="32dp"
             android:layout_marginEnd="32dp"
             android:layout_marginBottom="32dp"
-            android:text="BACK TO HOME SCREEN"
+            android:text="Back To Home Screen"
+            android:textAllCaps="false"
             app:backgroundTint="#24D651"
             app:cornerRadius="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -71,6 +72,16 @@
             android:src="@drawable/circle"
             tools:layout_editor_absoluteX="-74dp"
             tools:layout_editor_absoluteY="153dp" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="380dp"
+            android:layout_height="458dp"
+            android:src="@drawable/transfer_succesful_removebg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="68dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
