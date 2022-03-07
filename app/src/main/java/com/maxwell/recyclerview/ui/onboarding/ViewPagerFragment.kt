@@ -32,6 +32,7 @@ class ViewPagerFragment : Fragment() {
             requireActivity().supportFragmentManager,
             lifecycle
         )
+
         view.myViewpager.adapter = adapter
         return view
     }

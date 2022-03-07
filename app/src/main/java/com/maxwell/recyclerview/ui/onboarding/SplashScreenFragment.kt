@@ -3,6 +3,7 @@ package com.maxwell.recyclerview.ui.onboarding
 import android.content.Context
 import android.os.Bundle
 import android.os.Handler
+import android.os.Looper
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -18,7 +19,7 @@ class SplashScreenFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        Handler().postDelayed({
+        Handler(Looper.getMainLooper()).postDelayed({
             if (onBoardingFinished()){
                 findNavController().navigate(R.id.action_splashScreenFragment_to_loginFragment)
             }else{

@@ -1,24 +1,21 @@
 package com.maxwell.recyclerview.ui.home.dashboard
 
-import android.app.ActionBar
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.view.setPadding
 import androidx.viewpager.widget.ViewPager
 import com.maxwell.recyclerview.R
 import com.maxwell.recyclerview.adapter.CardAdapter
 import com.maxwell.recyclerview.databinding.FragmentTransferBinding
 import com.maxwell.recyclerview.model.CardModel
-import kotlinx.android.synthetic.main.fragment_transfer.*
 
 
 class TransferFragment : Fragment() {
 
     private lateinit var myModelList: ArrayList<CardModel>
-    private lateinit var actionBar: ActionBar
+
 
 //    private lateinit var cardAdapter: cardAdapter
     private lateinit var binding: FragmentTransferBinding
@@ -35,7 +32,6 @@ class TransferFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-
         // Inflate the layout for this fragment
 
         binding = FragmentTransferBinding.inflate(inflater, container, false)
@@ -48,26 +44,24 @@ class TransferFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         loadCards()
 
-        viewpager.addOnPageChangeListener(object :ViewPager.OnPageChangeListener{
-            override fun onPageScrollStateChanged(state: Int) {
-
-            }
-
-
-            override fun onPageScrolled(
-                position: Int,
-                positionOffset: Float,
-                positionOffsetPixels: Int
-            ) {
-
-            }
-
-            override fun onPageSelected(position: Int) {
-
-            }
-
-
-        })
+//        binding.viewpager.addOnPageChangeListener(object :ViewPager.OnPageChangeListener{
+//            override fun onPageScrollStateChanged(state: Int) {
+//
+//            }
+//
+//            override fun onPageScrolled(
+//                position: Int,
+//                positionOffset: Float,
+//                positionOffsetPixels: Int) {
+//
+//            }
+//
+//            override fun onPageSelected(position: Int) {
+//
+//            }
+//
+//
+//        })
 
 
     }
@@ -92,13 +86,13 @@ class TransferFragment : Fragment() {
             "07/27"
         )
         bcardName = arrayOf(
-            "American Express",
+            "Mastercard",
             "Barclays Bank",
+            "American Express",
             "Chase Bank",
             "Citigroup Bank",
             "Goldman Sachs",
-            "Visa",
-            "Mastercard"
+            "Visa"
         )
         bcardNumber = arrayOf(
             "2345 6079 6987 1234",
@@ -121,13 +115,13 @@ class TransferFragment : Fragment() {
 
         )
         bcardImage = arrayOf(
-            R.drawable.american_express,
+            R.drawable.mastercard2,
             R.drawable.barclays,
+            R.drawable.american_express,
             R.drawable.chase,
             R.drawable.citi,
             R.drawable.goldman_sachs,
-            R.drawable.visa,
-            R.drawable.mastercard2
+            R.drawable.visa
         )
 
         myModelList = arrayListOf<CardModel>()
@@ -136,9 +130,8 @@ class TransferFragment : Fragment() {
     }
 
     private fun getCardData(){
-        val cardAdapter = CardAdapter(requireContext(), CardModel.addListOfCardModel())
-        viewpager.adapter = cardAdapter
-        viewpager.setPadding(100,0,100,0)
+        val cardAdapter = CardAdapter(CardModel.addListOfCardModel())
+        binding.viewpager.adapter = cardAdapter
     }
 
 

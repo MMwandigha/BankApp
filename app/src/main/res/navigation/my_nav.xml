@@ -45,4 +45,9 @@
         android:name="com.maxwell.recyclerview.ui.home.dashboard.TransferFragment"
         android:label="fragment_transfer"
         tools:layout="@layout/fragment_transfer" />
+    <fragment
+        android:id="@+id/successFragment"
+        android:name="com.maxwell.recyclerview.SuccessFragment"
+        android:label="fragment_success"
+        tools:layout="@layout/fragment_success" />
 </navigation>

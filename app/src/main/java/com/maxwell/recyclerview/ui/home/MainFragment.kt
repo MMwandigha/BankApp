@@ -124,9 +124,9 @@ class MainFragment : Fragment(),OnItemUserClickListener {
 //            adapter = usersAdapter
 //        }
 
-        binding.recyclerview.layoutManager= LinearLayoutManager(requireActivity())
-        binding.recyclerview.setHasFixedSize(true)
-        binding.recyclerview.adapter=usersAdapter
+        binding.usersrecyclerview.layoutManager= LinearLayoutManager(requireActivity())
+        binding.usersrecyclerview.setHasFixedSize(true)
+        binding.usersrecyclerview.adapter=usersAdapter
 
 
     }
