@@ -44,10 +44,18 @@
         android:id="@+id/transferFragment"
         android:name="com.maxwell.recyclerview.ui.home.dashboard.TransferFragment"
         android:label="fragment_transfer"
-        tools:layout="@layout/fragment_transfer" />
+        tools:layout="@layout/fragment_transfer" >
+        <action
+            android:id="@+id/action_transferFragment_to_successFragment"
+            app:destination="@id/successFragment" />
+    </fragment>
     <fragment
         android:id="@+id/successFragment"
         android:name="com.maxwell.recyclerview.SuccessFragment"
         android:label="fragment_success"
-        tools:layout="@layout/fragment_success" />
+        tools:layout="@layout/fragment_success" >
+        <action
+            android:id="@+id/action_successFragment_to_transferFragment"
+            app:destination="@id/transferFragment" />
+    </fragment>
 </navigation>
