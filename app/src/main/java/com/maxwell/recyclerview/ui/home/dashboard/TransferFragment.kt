@@ -1,5 +1,6 @@
 package com.maxwell.recyclerview.ui.home.dashboard
 
+import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -25,7 +26,7 @@ class TransferFragment : Fragment() {
     lateinit var bcardExpiry: Array <String>
     lateinit var bcardImage: Array <Int>
     lateinit var bcardNumber: Array <String>
-    lateinit var bcardColor: Array <String>
+    lateinit var bcardColor: Array <Int>
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -105,13 +106,13 @@ class TransferFragment : Fragment() {
 
         )
         bcardColor = arrayOf(
-            "2345669",
-            "2345789",
-            "117ACA",
-            "DB230B",
-            "64A8F0",
-            "FCB70A",
-            "231F20"
+            Color.rgb(54,88,173),
+            Color.rgb(0,57,93),
+            Color.rgb(202,233, 217),
+            Color.rgb(255,215,0),
+            Color.rgb(127,255,212),
+            Color.rgb(0,250,154),
+            Color.rgb(176,196,222)
 
         )
         bcardImage = arrayOf(

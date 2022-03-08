@@ -20,6 +20,7 @@
             android:layout_marginTop="24dp"
             android:background="#DCDCDC"
             app:cardBackgroundColor="#E8E8E8"
+            app:cardElevation="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
@@ -55,7 +56,7 @@
                         android:id="@+id/textView12"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
+                        android:layout_marginTop="24dp"
                         android:layout_marginEnd="4dp"
                         android:text="See All"
                         android:textColor="#0A052B"
@@ -66,11 +67,33 @@
                         android:id="@+id/imageView14"
                         android:layout_width="29dp"
                         android:layout_height="27dp"
-                        android:layout_marginTop="16dp"
+                        android:layout_marginTop="20dp"
                         android:layout_marginEnd="16dp"
                         android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
-                        app:tint="#0A052B"
                         app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:tint="#0A052B" />
+
+                    <View
+                        android:id="@+id/lineseparatorrecent"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@android:color/darker_gray"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+                    <View
+                        android:id="@+id/lineseparatordate"
+                        android:layout_width="1dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/darker_gray"
+                        app:layout_constraintLeft_toRightOf="@id/textView11"
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <androidx.recyclerview.widget.RecyclerView
@@ -78,7 +101,17 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+                        app:layout_constraintTop_toBottomOf="@id/lineseparatorrecent" />
+
+                    <TextView
+                        android:id="@+id/Date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="21dp"
+                        android:text="25 March"
+                        app:layout_constraintLeft_toRightOf="@id/lineseparatordate"
+                        app:layout_constraintTop_toTopOf="parent" />
 
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -95,6 +128,7 @@
             android:layout_marginTop="24dp"
             android:layout_marginEnd="24dp"
             app:cardBackgroundColor="#7286E8"
+            app:cardElevation="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/materialCardView3"
             app:layout_constraintTop_toBottomOf="@+id/materialcardView">
@@ -149,13 +183,12 @@
 
                     <ImageView
                         android:id="@+id/imageView"
-                        android:layout_width="65dp"
-                        android:layout_height="43dp"
-                        android:layout_marginStart="100dp"
-                        android:layout_marginBottom="112dp"
+                        android:layout_width="66dp"
+                        android:layout_height="62dp"
+                        android:layout_marginTop="-15dp"
                         android:src="@drawable/new_badge"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent" />
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
                         android:id="@+id/textView14"
@@ -183,6 +216,7 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="24dp"
             app:cardBackgroundColor="#8547FF"
+            app:cardElevation="20dp"
             app:layout_constraintEnd_toStartOf="@+id/materialCardView5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/materialcardView">
@@ -273,13 +307,14 @@
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/materialcardView"
-            android:layout_width="0dp"
             style="@style/MyCardView2"
+            android:layout_width="0dp"
             android:layout_height="200dp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="20dp"
             android:background="#6C7BC6"
+            app:cardElevation="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -298,6 +333,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
                     android:layout_marginBottom="16dp"
+                    app:cardElevation="20dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1.0"
@@ -349,6 +385,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="64dp"
                     android:layout_marginEnd="16dp"
+                    app:cardElevation="20dp"
                     app:layout_constraintBottom_toTopOf="@id/materialCardView6"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent">

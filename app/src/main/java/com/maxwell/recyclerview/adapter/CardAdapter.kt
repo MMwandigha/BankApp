@@ -20,9 +20,9 @@ class CardAdapter(private val cardsList: ArrayList<CardModel>):
     }
 
     //To randomize card colors//
-        private fun Int.Companion.randomColor(): Int{
-        return Color.argb(255, Random.nextInt(256),Random.nextInt(256),Random.nextInt(256))
-    }
+//        private fun Int.Companion.randomColor(): Int{
+//        return Color.argb(255, Random.nextInt(256),Random.nextInt(256),Random.nextInt(256))
+//    }
 
     override fun onBindViewHolder(holder: CardViewHolder, position: Int)  {
         val currentItem = cardsList[position]
@@ -30,7 +30,9 @@ class CardAdapter(private val cardsList: ArrayList<CardModel>):
         holder.binding.cardHolder.text = currentItem.bcardHolder
         holder.binding.cardExpiry.text = currentItem.bcardExpiry
         holder.binding.cardName.text = currentItem.bcardName
-        holder.binding.cardColor.setCardBackgroundColor(Int.randomColor())
+//        holder.binding.cardColor.setCardBackgroundColor(Int.randomColor())
+        holder.binding.cardColor.setCardBackgroundColor(currentItem.bcardColor)
+
 
     }
 

@@ -5,10 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.google.android.material.tabs.TabLayoutMediator
 import com.maxwell.recyclerview.R
 import com.maxwell.recyclerview.ui.onboarding.screens.FirstScreenFragment
 import com.maxwell.recyclerview.ui.onboarding.screens.SecondScreenFragment
 import com.maxwell.recyclerview.ui.onboarding.screens.ThirdScreenFragment
+import kotlinx.android.synthetic.main.fragment_view_pager.*
 import kotlinx.android.synthetic.main.fragment_view_pager.view.*
 
 class ViewPagerFragment : Fragment() {

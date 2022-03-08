@@ -58,4 +58,9 @@
             android:id="@+id/action_successFragment_to_transferFragment"
             app:destination="@id/transferFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/recentsFragment"
+        android:name="com.maxwell.recyclerview.RecentsFragment"
+        android:label="fragment_recents"
+        tools:layout="@layout/fragment_recents" />
 </navigation>

@@ -1,31 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:layout_height="wrap_content">
 
-    <androidx.cardview.widget.CardView
+    <com.google.android.material.card.MaterialCardView
         android:id="@+id/cvUserData"
         android:layout_width="match_parent"
-        android:layout_height="82dp"
-        android:layout_margin="8dp">
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        app:cardBackgroundColor="#F4F4F4"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#888888"
+        app:strokeWidth="0.5dp">
 
-        <RelativeLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:paddingTop="2.5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="2.5dp">
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/userpicture"
-                android:layout_width="80dp"
-                android:layout_height="match_parent"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
                 android:adjustViewBounds="false"
                 android:background="#B8B8B8"
                 android:cropToPadding="false"
                 android:paddingBottom="2dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/alex"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
                 app:shapeAppearanceOverlay="@style/RoundCorner" />
 
             <TextView
@@ -33,24 +55,26 @@
                 style="@style/TextAppearance.AppCompat.Medium"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="13dp"
-                android:layout_marginTop="13dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Your Name Here"
+                android:textColor="#0A052B"
                 android:textStyle="bold"
-                android:layout_toRightOf="@+id/userpicture"
-                android:text="Your Name Here" />
+                app:layout_constraintLeft_toRightOf="@id/userpicture"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/email_address"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/username"
-                android:layout_marginLeft="13dp"
-                android:layout_marginTop="10dp"
-                android:layout_toRightOf="@+id/userpicture"
-                android:text="Your mail address" />
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="14dp"
+                android:text="Your mail address"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/userpicture" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-        </RelativeLayout>
-
-    </androidx.cardview.widget.CardView>
-</LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
