@@ -1,16 +1,22 @@
 package com.maxwell.recyclerview.adapter
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.navigation.fragment.NavHostFragment.Companion.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.maxwell.recyclerview.R
 import com.maxwell.recyclerview.adapter.listener.OnItemUserClickListener
 import com.maxwell.recyclerview.databinding.UserListBinding
 import com.maxwell.recyclerview.model.UsersModel
 
 
 class UsersAdapter(private val usersList : ArrayList<UsersModel>,
-                   private  val mListenerUser: OnItemUserClickListener
+                   private  val mListenerUser: OnItemUserClickListener,
 ):
+
+
     RecyclerView.Adapter<UsersAdapter.MyViewHolder>() {
 
 
@@ -21,12 +27,17 @@ class UsersAdapter(private val usersList : ArrayList<UsersModel>,
         )
     }
 
+
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val currentItem = usersList[position]
         holder.binding.userpicture.setImageResource(currentItem.titleImage)
         holder.binding.username.text=currentItem.titleName
         holder.binding.emailAddress.text=currentItem.titleEmail
 
+        holder.binding.userpicture.setOnClickListener {
+//            context.findNavController().navigate(R.id.action_mainFragment_to_secondFragment)
+
+}
     }
 
     override fun getItemCount(): Int {

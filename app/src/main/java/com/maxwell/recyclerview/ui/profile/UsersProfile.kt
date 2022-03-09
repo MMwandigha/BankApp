@@ -21,7 +21,7 @@ class UsersProfile : AppCompatActivity() {
             val titleName= bundle!!.getString("titleName")
             val titleImage= bundle.getInt("titleImage")
             val titleEmail = bundle.getString("titleEmail")
-            val titleDesc = bundle.getString("titleDesc")
+             val titleDesc = bundle.getString("titleDesc")
 
             myName.text = titleName
             myDesc.text = titleDesc

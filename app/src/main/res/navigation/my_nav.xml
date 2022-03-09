@@ -38,6 +38,9 @@
         <action
             android:id="@+id/action_dashboardFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_transferFragment"
+            app:destination="@id/transferFragment" />
     </fragment>
 
     <fragment

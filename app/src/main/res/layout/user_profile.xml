@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.profile.UsersProfile">
+    tools:context=".ui.home.SecondFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"

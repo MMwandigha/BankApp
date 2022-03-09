@@ -22,7 +22,7 @@
         android:id="@+id/imgEnjoy"
         android:layout_width="395dp"
         android:layout_height="315dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="90dp"
         android:src="@drawable/mobile_transfer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
