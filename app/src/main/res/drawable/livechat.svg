@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20.055" height="20.026" viewBox="0 0 20.055 20.026">
+  <g id="Layer_2" data-name="Layer 2" transform="translate(-1.739 -1.741)">
+    <g id="message-circle" transform="translate(1.739 1.741)">
+      <circle id="Ellipse_474" data-name="Ellipse 474" cx="1" cy="1" r="1" transform="translate(9.365 9.362)" fill="#fff"/>
+      <circle id="Ellipse_475" data-name="Ellipse 475" cx="1" cy="1" r="1" transform="translate(12.766 9.362)" fill="#fff"/>
+      <circle id="Ellipse_476" data-name="Ellipse 476" cx="1" cy="1" r="1" transform="translate(4.831 9.362)" fill="#fff"/>
+      <path id="Path_2057" data-name="Path 2057" d="M19.034,4.924A9.979,9.979,0,0,0,2.788,15.9a1.058,1.058,0,0,1,.09.639L2,20.761a.992.992,0,0,0,1,1.2h.2L7.469,21.1a1.257,1.257,0,0,1,.639.09A9.979,9.979,0,0,0,19.084,4.944Zm.828,8.343A7.983,7.983,0,0,1,8.886,19.334a3.253,3.253,0,0,0-1.247-.259,3.423,3.423,0,0,0-.559.05l-2.814.569.569-2.814a3.084,3.084,0,0,0-.21-1.806,7.985,7.985,0,1,1,15.238-1.806Z" transform="translate(-1.975 -1.978)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

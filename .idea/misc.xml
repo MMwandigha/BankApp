@@ -10,7 +10,13 @@
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/drawable/gradient_background.xml" value="0.1" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/drawable/ic_baseline_card_giftcard_24.xml" value="0.2165" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2165" />
+        <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/drawable/ic_callsupport.xml" value="0.1485" />
+        <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/drawable/ic_chatwithus.xml" value="0.1485" />
+        <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/drawable/ic_chatwithusalpha.xml" value="0.1" />
+        <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/drawable/ic_faq.xml" value="0.1485" />
+        <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/drawable/ic_feedback.xml" value="0.1485" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/drawable/ic_launcher_background.xml" value="0.115" />
+        <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/drawable/ic_locateus.xml" value="0.1485" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/drawable/img.xml" value="0.1" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/drawable/new_badge.xml" value="0.1" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/drawable/quadrant.xml" value="0.209" />
@@ -36,6 +42,7 @@
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/fragment_second_screen.xml" value="0.16" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/fragment_splash_screen.xml" value="0.33" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/fragment_success.xml" value="0.22" />
+        <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/fragment_support.xml" value="0.22" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/fragment_third_screen.xml" value="0.18611111111111112" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/fragment_transfer.xml" value="0.25" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/fragment_view_pager.xml" value="0.1" />
