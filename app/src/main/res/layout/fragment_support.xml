@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.dashboard.SupportFragment">
+    tools:context=".ui.home.support.SupportFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -272,6 +272,8 @@
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="8dp"
             android:clickable="true"
+            android:focusable="true"
+            android:visibility="invisible"
             android:text="Live Chat"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
@@ -288,6 +290,8 @@
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="8dp"
             android:clickable="true"
+            android:focusable="true"
+            android:visibility="invisible"
             android:text="Facebook"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
@@ -305,6 +309,8 @@
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="8dp"
             android:clickable="true"
+            android:focusable="true"
+            android:visibility="invisible"
             android:text="Twitter"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
@@ -321,6 +327,8 @@
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="8dp"
             android:clickable="true"
+            android:focusable="true"
+            android:visibility="invisible"
             android:text="WhatsApp"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"

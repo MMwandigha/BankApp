@@ -17,8 +17,7 @@
         android:layout_height="0dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="28dp"
-        android:text="Support
-"
+        android:text="Support"
         android:textColor="#0A052B"
         android:textSize="20dp"
         android:textStyle="bold"

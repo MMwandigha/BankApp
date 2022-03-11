@@ -19,7 +19,7 @@ import com.maxwell.recyclerview.model.UsersModel
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_main.view.*
 
-class MainActivity : AppCompatActivity(), View.OnClickListener {
+class MainActivity : AppCompatActivity(){
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,15 +37,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         bottomNavigationView.setupWithNavController(navController)
         bottomNavigationView.menu.getItem(2).isEnabled = false
 
-        floatingActionButton.setOnClickListener(this)
+        floatingActionButton.setOnClickListener{
+
+        }
 
 
     }
-        override fun onClick(view: View?) {
-            if (view?.getId()==R.id.transferFragment) {
-                supportFragmentManager.beginTransaction().replace(R.id.dashboardFragment, fragment).commit()
-            }
-    }
+
 
 //        val navHostFragment = supportFragmentManager
 //            .findFragmentById(R.id.fragmentContainerView) as NavHostFragment
