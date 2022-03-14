@@ -37,12 +37,14 @@ class MainActivity : AppCompatActivity(){
         bottomNavigationView.setupWithNavController(navController)
         bottomNavigationView.menu.getItem(2).isEnabled = false
 
-        floatingActionButton.setOnClickListener{
-
-        }
+//        floatingActionButton.setOnClickListener{
+//
+//        }
 
 
     }
+
+
 
 
 //        val navHostFragment = supportFragmentManager

@@ -63,12 +63,12 @@
     </fragment>
     <fragment
         android:id="@+id/recentsFragment"
-        android:name="com.maxwell.recyclerview.RecentsFragment"
+        android:name="com.maxwell.recyclerview.ui.home.dashboard.RecentsFragment"
         android:label="fragment_recents"
         tools:layout="@layout/fragment_recents" />
     <fragment
         android:id="@+id/supportFragment"
-        android:name="com.maxwell.recyclerview.ui.home.support.SupportFragment"
+        android:name="com.maxwell.recyclerview.ui.home.dashboard.SupportFragment"
         android:label="fragment_support"
         tools:layout="@layout/fragment_support" >
         <action
@@ -91,25 +91,45 @@
         android:id="@+id/callSupportFragment"
         android:name="com.maxwell.recyclerview.ui.home.support.CallSupportFragment"
         android:label="fragment_call_support"
-        tools:layout="@layout/fragment_call_support" />
+        tools:layout="@layout/fragment_call_support" >
+        <action
+            android:id="@+id/action_callSupportFragment_to_supportFragment"
+            app:destination="@id/supportFragment" />
+    </fragment>
     <fragment
         android:id="@+id/feedbackFragment"
         android:name="com.maxwell.recyclerview.ui.home.support.FeedbackFragment"
         android:label="fragment_feedback"
-        tools:layout="@layout/fragment_feedback" />
+        tools:layout="@layout/fragment_feedback" >
+        <action
+            android:id="@+id/action_feedbackFragment_to_supportFragment"
+            app:destination="@id/supportFragment" />
+    </fragment>
     <fragment
         android:id="@+id/locateUsFragment"
         android:name="com.maxwell.recyclerview.ui.home.support.LocateUsFragment"
         android:label="fragment_locate_us"
-        tools:layout="@layout/fragment_locate_us" />
+        tools:layout="@layout/fragment_locate_us" >
+        <action
+            android:id="@+id/action_locateUsFragment_to_supportFragment"
+            app:destination="@id/supportFragment" />
+    </fragment>
     <fragment
         android:id="@+id/faqFragment"
         android:name="com.maxwell.recyclerview.ui.home.support.FaqFragment"
         android:label="fragment_faq"
-        tools:layout="@layout/fragment_faq" />
+        tools:layout="@layout/fragment_faq" >
+        <action
+            android:id="@+id/action_faqFragment_to_supportFragment"
+            app:destination="@id/supportFragment" />
+    </fragment>
     <fragment
         android:id="@+id/livechatFragment"
         android:name="com.maxwell.recyclerview.ui.home.support.LivechatFragment"
         android:label="fragment_livechat"
-        tools:layout="@layout/fragment_livechat" />
+        tools:layout="@layout/fragment_livechat" >
+        <action
+            android:id="@+id/action_livechatFragment_to_supportFragment"
+            app:destination="@id/supportFragment" />
+    </fragment>
 </navigation>

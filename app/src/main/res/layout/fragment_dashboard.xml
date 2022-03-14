@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -45,7 +45,7 @@
                         android:layout_marginTop="16dp"
                         android:text="Recent Activity"
                         android:textColor="#0A052B"
-                        android:textSize="24sp"
+                        android:textSize="18sp"
                         android:textStyle="bold"
                         app:layout_constraintEnd_toStartOf="@+id/textView12"
                         app:layout_constraintHorizontal_bias="0.0"
@@ -148,8 +148,8 @@
 
                     <TextView
                         android:id="@+id/textView10"
-                        android:layout_width="153dp"
-                        android:layout_height="37dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
                         android:layout_marginBottom="16dp"
@@ -237,9 +237,9 @@
                     <TextView
                         android:id="@+id/textView4"
                         android:layout_width="match_parent"
-                        android:layout_height="33dp"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginEnd="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
                         android:layout_marginBottom="16dp"
                         android:text="Get voucher to one of 30 e-shops "
                         android:textColor="#FFFFFF"
@@ -517,4 +517,4 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-</FrameLayout>
+</ScrollView>

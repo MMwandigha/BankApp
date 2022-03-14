@@ -58,4 +58,12 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
 
+    <string-array name="typeOfFeedback">
+        <item>Report Fraud</item>
+        <item>Report a bug</item>
+        <item>Report an Issue Encountered</item>
+        <item>Report a concern</item>
+        <item>Give us your Experience</item>
+    </string-array>
+
 </resources>
