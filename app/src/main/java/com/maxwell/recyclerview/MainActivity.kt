@@ -16,33 +16,58 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.maxwell.recyclerview.adapter.UsersAdapter
 import com.maxwell.recyclerview.databinding.ActivityMainBinding
 import com.maxwell.recyclerview.model.UsersModel
+import com.maxwell.recyclerview.ui.home.dashboard.TransferFragment
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_main.view.*
 
 class MainActivity : AppCompatActivity(){
 
-
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
 
         //Added
-        val binding: ActivityMainBinding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
-        val floatingActionButton = findViewById<FloatingActionButton>(R.id.fab)
 
         val navController = findNavController(R.id.fragment)
-        bottomNavigationView.setupWithNavController(navController)
-        bottomNavigationView.menu.getItem(2).isEnabled = false
 
-//        floatingActionButton.setOnClickListener{
+        binding.bottomNavigationView.setupWithNavController(navController)
+        binding.bottomNavigationView.menu.getItem(2).isEnabled = false
+
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+
+            if (destination.id == R.id.supportFragment || destination.id == R.id.transferFragment) {
+                binding.bottomAppBar.visibility = View.GONE
+
+            } else {
+                binding.bottomAppBar.visibility = View.VISIBLE
+
+            }
+        }
+
+        binding.fab.setOnClickListener {
+            findNavController(R.id.fragment).navigate(R.id.action_dashboardFragment_to_transferFragment)
+
+           // supportFragmentManager.beginTransaction().replace(R.id.fragment,TransferFragment()).addToBackStack(null).commit()
+        }
 //
+//        binding.bottomNavigationView.setOnNavigationItemSelectedListener {
+//            item->
+//            when(item.itemId){
+//                R.id.dashboardFragment ->{
+//                    findNavController(R.id.fragment).navigate(R.id.action_transferFragment_to_dashboardFragment)
+//                    true
+//                }
+//                else -> false
+//            }
 //        }
 
 
     }
+
 
 
 

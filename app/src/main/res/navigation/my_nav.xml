@@ -51,6 +51,9 @@
         <action
             android:id="@+id/action_transferFragment_to_successFragment"
             app:destination="@id/successFragment" />
+        <action
+            android:id="@+id/action_transferFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
     </fragment>
     <fragment
         android:id="@+id/successFragment"
@@ -132,4 +135,9 @@
             android:id="@+id/action_livechatFragment_to_supportFragment"
             app:destination="@id/supportFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/myWalletFragment"
+        android:name="com.maxwell.recyclerview.ui.home.dashboard.MyWalletFragment"
+        android:label="fragment_my_wallet"
+        tools:layout="@layout/fragment_my_wallet" />
 </navigation>
