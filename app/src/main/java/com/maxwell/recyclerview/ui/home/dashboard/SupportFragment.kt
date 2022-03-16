@@ -47,7 +47,7 @@ class SupportFragment : Fragment() {
 
         }
         binding.livechatfab.setOnClickListener{
-            view.findNavController().navigate(R.id.action_supportFragment_to_livechatFragment)
+            view.findNavController().navigate(R.id.action_supportFragment_to_mainFragment)
 
         }
         binding.facebookfab.setOnClickListener{

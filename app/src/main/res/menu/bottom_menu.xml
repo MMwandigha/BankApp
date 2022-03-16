@@ -10,7 +10,8 @@
         android:icon="@drawable/ic_baseline_credit_card_24"/>
 
     <item android:id="@+id/transferFragment"
-        android:title=""/>
+        android:title="Transfer"
+        android:icon="@drawable/ic_baseline_swap_horiz_24"/>
 
     <item android:id="@+id/recentsFragment"
         android:title="Recents"

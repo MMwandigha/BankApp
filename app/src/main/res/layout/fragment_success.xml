@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".SuccessFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -26,6 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="54dp"
             android:layout_marginStart="32dp"
+            android:layout_marginTop="64dp"
             android:layout_marginEnd="32dp"
             android:layout_marginBottom="32dp"
             android:text="Back To Home Screen"
@@ -34,32 +35,35 @@
             app:cornerRadius="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/processed_succesfully" />
 
         <TextView
             android:id="@+id/your_transfer_has_been"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="52dp"
-            android:layout_marginEnd="119dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="50dp"
             android:text="Your transfer has been"
             android:textSize="24dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="506dp" />
+            app:layout_constraintTop_toBottomOf="@id/successvector" />
 
         <TextView
             android:id="@+id/processed_succesfully"
             android:layout_width="0dp"
             android:layout_height="132dp"
             android:layout_marginStart="52dp"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="55dp"
             android:text="Processed Succesfully"
             android:textColor="#23AE46"
             android:textSize="45dp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/your_transfer_has_been" />
 
@@ -85,16 +89,16 @@
 
         <ImageView
             android:id="@+id/successvector"
-            android:layout_width="369dp"
+            android:layout_width="411dp"
             android:layout_height="357dp"
+            android:layout_marginLeft="-200dp"
             android:layout_marginTop="120dp"
             android:src="@drawable/transfer_succesful_removebg"
             app:layout_constraintBottom_toTopOf="@id/your_transfer_has_been"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/purplecircle"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-</FrameLayout>
+</ScrollView>

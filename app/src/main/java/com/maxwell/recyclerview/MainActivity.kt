@@ -35,11 +35,11 @@ class MainActivity : AppCompatActivity(){
         val navController = findNavController(R.id.fragment)
 
         binding.bottomNavigationView.setupWithNavController(navController)
-        binding.bottomNavigationView.menu.getItem(2).isEnabled = false
+//        binding.bottomNavigationView.menu.getItem(2).isEnabled = false
 
         navController.addOnDestinationChangedListener { _, destination, _ ->
 
-            if (destination.id == R.id.supportFragment || destination.id == R.id.transferFragment) {
+            if (destination.id == R.id.faqFragment || destination.id == R.id.locateUsFragment || destination.id == R.id.feedbackFragment || destination.id == R.id.callSupportFragment || destination.id == R.id.mainFragment) {
                 binding.bottomAppBar.visibility = View.GONE
 
             } else {
@@ -48,11 +48,11 @@ class MainActivity : AppCompatActivity(){
             }
         }
 
-        binding.fab.setOnClickListener {
-            findNavController(R.id.fragment).navigate(R.id.action_dashboardFragment_to_transferFragment)
-
-           // supportFragmentManager.beginTransaction().replace(R.id.fragment,TransferFragment()).addToBackStack(null).commit()
-        }
+//        binding.fab.setOnClickListener {
+//            findNavController(R.id.fragment).navigate(R.id.action_dashboardFragment_to_transferFragment)
+//
+//           // supportFragmentManager.beginTransaction().replace(R.id.fragment,TransferFragment()).addToBackStack(null).commit()
+//        }
 //
 //        binding.bottomNavigationView.setOnNavigationItemSelectedListener {
 //            item->

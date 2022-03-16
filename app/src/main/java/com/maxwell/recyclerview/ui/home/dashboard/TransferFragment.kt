@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.viewpager.widget.ViewPager
 import com.maxwell.recyclerview.R
 import com.maxwell.recyclerview.adapter.CardAdapter
@@ -43,6 +44,12 @@ class TransferFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        //statements to be inserted for validation
+        binding.btnSend.setOnClickListener {
+            view.findNavController().navigate(R.id.action_transferFragment_to_successFragment)
+
+        }
         loadCards()
 
 //        binding.viewpager.addOnPageChangeListener(object :ViewPager.OnPageChangeListener{
@@ -134,6 +141,7 @@ class TransferFragment : Fragment() {
         val cardAdapter = CardAdapter(CardModel.addListOfCardModel())
         binding.viewpager.adapter = cardAdapter
     }
+
 
 
 
