@@ -2,18 +2,18 @@ package com.maxwell.recyclerview.ui.auth.authfragments
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.InputFilter.LengthFilter
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
+import android.view.View.OnFocusChangeListener
 import android.view.ViewGroup
-import android.widget.Toast
-import androidx.lifecycle.MediatorLiveData
-import androidx.lifecycle.MutableLiveData
+import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.maxwell.recyclerview.MainActivity
 import com.maxwell.recyclerview.R
 import com.maxwell.recyclerview.databinding.FragmentLoginBinding
+
 
 class LoginFragment : Fragment() {
 
@@ -29,6 +29,8 @@ class LoginFragment : Fragment() {
         // Inflate the layout for this fragment
         binding= FragmentLoginBinding.inflate(inflater, container, false)
         return binding.root
+
+
 
 
 //        loadFragment()
@@ -57,9 +59,19 @@ class LoginFragment : Fragment() {
                 Log.e("TAG", "onViewCreated: ${binding.etxtPhoneNumber.text.toString()}" )
                 startActivity(Intent(requireActivity(), MainActivity:: class.java))
             }
-
-
         }
+
+        binding.etxtPhoneNumber.filters += LengthFilter(9)
+
+        binding.etxtPhoneNumber.onFocusChangeListener = OnFocusChangeListener { _, hasFocus ->
+            if (hasFocus) {
+                binding.etxtPhoneNumber.hint = "710184980"
+            } else {
+                binding.etxtPhoneNumber.hint = ""
+            }
+        }
+
+
 
     }
 
@@ -80,7 +92,7 @@ class LoginFragment : Fragment() {
             binding.etxtPhoneNumber.error = "Phone Number is Required"
             return false
 
-        } else if (loginPhone.length != 10) {
+        } else if (loginPhone.length != 9) {
             binding.etxtPhoneNumber.error = "Phone Number should have 10 digits"
 
             return false

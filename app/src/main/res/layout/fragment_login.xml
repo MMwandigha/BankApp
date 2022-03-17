@@ -56,16 +56,18 @@
             android:layout_marginTop="32dp"
             android:layout_marginEnd="24dp"
             app:prefixText="+254"
+            android:hint="Phone Number"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtLoginPage">
+            app:layout_constraintTop_toBottomOf="@+id/txtLoginPage"
+            android:focusableInTouchMode="true"
+            android:focusable="true">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etxtPhoneNumber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="Phone Number"
                 android:inputType="phone"
                 android:textSize="14dp"
                 android:textStyle="bold" />
