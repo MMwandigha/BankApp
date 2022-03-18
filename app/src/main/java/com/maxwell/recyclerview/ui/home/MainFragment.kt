@@ -17,7 +17,6 @@ import com.maxwell.recyclerview.model.UsersModel
 class MainFragment : Fragment(),OnItemUserClickListener {
     private lateinit var newArrayList: ArrayList<UsersModel>
 
-
     //Added
     private lateinit var binding: FragmentMainBinding
 
