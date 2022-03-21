@@ -85,7 +85,7 @@ class RegisterFragment : Fragment() {
             binding.etxtConfirmPassword.error = "This password does not match"
         }
 
-        if (registerPhone.length == 0) {
+        if (registerPhone.isEmpty()) {
             binding.etxtPhoneNumber.error = "Phone Number is Required"
             return false
 

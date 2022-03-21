@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.viewpager.widget.ViewPager
 import com.maxwell.recyclerview.R
 import com.maxwell.recyclerview.adapter.CardAdapter
@@ -121,6 +122,8 @@ class TransferFragment : Fragment() {
     private fun getCardData(){
         val cardAdapter = CardAdapter(CardModel.addListOfCardModel())
         binding.viewpager.adapter = cardAdapter
+
+
     }
 
 

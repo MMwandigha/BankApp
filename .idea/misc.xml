@@ -6,7 +6,7 @@
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.115" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/drawable/button_bg_support.xml" value="0.1" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/drawable/circle.xml" value="0.1" />
-        <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/drawable/default_dot.xml" value="0.1" />
+        <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/drawable/default_dot.xml" value="0.33" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/drawable/gradient_background.xml" value="0.1" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/drawable/ic_baseline_card_giftcard_24.xml" value="0.2165" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2165" />
@@ -22,19 +22,19 @@
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/drawable/quadrant.xml" value="0.209" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/drawable/rounded_buttons.xml" value="0.1" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/drawable/rounded_buttons_with_outline.xml" value="0.1" />
-        <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/drawable/selected_dot.xml" value="0.12" />
+        <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/drawable/selected_dot.xml" value="0.25" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/drawable/splash_gradient.xml" value="0.2165" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/drawable/tab_selector.xml" value="0.1" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.162890625" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout-w936dp/activity_login.xml" value="0.15703125" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/activity_auth.xml" value="0.18" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/activity_login.xml" value="0.209375" />
-        <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/card_item.xml" value="0.1" />
+        <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/card_item.xml" value="0.2" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/dropdown_item.xml" value="0.22" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/fragment_call_support.xml" value="0.2" />
-        <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/fragment_dashboard.xml" value="0.18" />
-        <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/fragment_faq.xml" value="0.22" />
+        <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/fragment_dashboard.xml" value="0.13958333333333334" />
+        <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/fragment_faq.xml" value="0.33" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/fragment_feedback.xml" value="0.25" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/fragment_first_screen.xml" value="0.2" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/fragment_livechat.xml" value="0.21388888888888888" />
@@ -42,7 +42,7 @@
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/fragment_login.xml" value="0.1" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/fragment_login11.xml" value="0.209375" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/fragment_main.xml" value="0.16" />
-        <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/fragment_my_wallet.xml" value="0.2" />
+        <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/fragment_my_wallet.xml" value="0.18" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/fragment_my_wallets.xml" value="0.13958333333333334" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/fragment_recents.xml" value="0.18" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/fragment_register.xml" value="0.18" />
@@ -52,7 +52,7 @@
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/fragment_success.xml" value="0.14" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/fragment_support.xml" value="0.21" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/fragment_third_screen.xml" value="0.18611111111111112" />
-        <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/fragment_transfer.xml" value="0.15" />
+        <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/fragment_transfer.xml" value="0.2246153846153846" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/fragment_view_pager.xml" value="0.1" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/transaction_item.xml" value="0.25" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/user_list.xml" value="0.25" />
@@ -60,7 +60,7 @@
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/user_profile.xml" value="0.15" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/user_registration.xml" value="0.33" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/wallet_items.xml" value="0.2" />
-        <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/menu/bottom_menu.xml" value="0.22" />
+        <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/menu/bottom_menu.xml" value="0.1" />
         <entry key="..\:/Users/maxmw/AndroidStudioProjects/RecyclerView/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.165" />
       </map>
     </option>

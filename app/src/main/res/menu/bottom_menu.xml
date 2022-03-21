@@ -13,7 +13,7 @@
         android:title="Transfer"
         android:icon="@drawable/ic_baseline_swap_horiz_24"/>
 
-    <item android:id="@+id/balancesFragment"
+    <item android:id="@+id/myWalletFragment"
         android:title="My Profile"
         android:icon="@drawable/ic_baseline_account_circle_24"/>
 
