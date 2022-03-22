@@ -1,5 +1,6 @@
 package com.maxwell.recyclerview.ui.auth.authfragments
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.text.InputFilter.LengthFilter
@@ -8,14 +9,21 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.View.OnFocusChangeListener
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.findNavController
 import com.maxwell.recyclerview.MainActivity
 import com.maxwell.recyclerview.R
 import com.maxwell.recyclerview.databinding.FragmentLoginBinding
+import com.maxwell.recyclerview.ui.auth.AuthListener
+import com.maxwell.recyclerview.ui.auth.AuthViewModel
+import com.maxwell.recyclerview.util.toast
 
 
-class LoginFragment : Fragment() {
+class LoginFragment : Fragment(), AuthListener {
 
 
     private lateinit var binding: FragmentLoginBinding
@@ -30,23 +38,16 @@ class LoginFragment : Fragment() {
         binding= FragmentLoginBinding.inflate(inflater, container, false)
         return binding.root
 
-
-
-
-//        loadFragment()
-
     }
-
-//    private fun loadFragment(bi: RegisterFragment) {
-//        val transaction = supportFragmentManager.beginTransaction()
-//        transaction.replace(binding.txtNotRegistered, LoginFragment)
-//        transaction.disallowAddToBackStack()
-//        transaction.commit()
-//    }
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        val viewModel = ViewModelProviders.of(this).get(AuthViewModel::class.java)
+        binding.viewmodel=viewModel
+
+        viewModel.authListener=this
 
         binding.txtNotRegistered.setOnClickListener{
 
@@ -75,6 +76,7 @@ class LoginFragment : Fragment() {
 
     }
 
+
     private fun checkAllFields(): Boolean {
 
         val loginPassword = binding.etxtPassword.text.toString()
@@ -101,6 +103,20 @@ class LoginFragment : Fragment() {
             return true
         }
     }
+
+    override fun onStarted() {
+        requireActivity().toast("Login Success")
+    }
+
+    override fun onSuccess() {
+        requireActivity().toast("Login Succesful")
+    }
+
+    override fun onFailure(message: String) {
+        requireActivity().toast(message)
+    }
+
+
 
 
 }
