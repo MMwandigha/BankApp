@@ -13,7 +13,7 @@ class AuthViewModel: ViewModel() {
     fun onLoginButtonClick(view: View){
         authListener?.onStarted()
         if (phoneNumber.toString().isEmpty() || password.isNullOrEmpty() ){
-            authListener?.onFailure("Invalid email or password")
+            authListener?.onFailure("Invalid phone number or password")
             return
         }
 

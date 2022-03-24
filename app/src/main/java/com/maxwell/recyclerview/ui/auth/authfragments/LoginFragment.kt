@@ -23,7 +23,7 @@ import com.maxwell.recyclerview.ui.auth.AuthViewModel
 import com.maxwell.recyclerview.util.toast
 
 
-class LoginFragment : Fragment(), AuthListener {
+class LoginFragment : Fragment() {
 
 
     private lateinit var binding: FragmentLoginBinding
@@ -44,10 +44,10 @@ class LoginFragment : Fragment(), AuthListener {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val viewModel = ViewModelProviders.of(this).get(AuthViewModel::class.java)
-        binding.viewmodel=viewModel
-
-        viewModel.authListener=this
+//        val viewModel = ViewModelProviders.of(this).get(AuthViewModel::class.java)
+//        binding.viewmodel=viewModel
+//
+//        viewModel.authListener=this
 
         binding.txtNotRegistered.setOnClickListener{
 
@@ -96,7 +96,6 @@ class LoginFragment : Fragment(), AuthListener {
 
         } else if (loginPhone.length != 9) {
             binding.etxtPhoneNumber.error = "Phone Number should have 10 digits"
-
             return false
         }
             else{
@@ -104,17 +103,17 @@ class LoginFragment : Fragment(), AuthListener {
         }
     }
 
-    override fun onStarted() {
-        requireActivity().toast("Login Success")
-    }
-
-    override fun onSuccess() {
-        requireActivity().toast("Login Succesful")
-    }
-
-    override fun onFailure(message: String) {
-        requireActivity().toast(message)
-    }
+//    override fun onStarted() {
+//        requireActivity().toast("Login Success")
+//    }
+//
+//    override fun onSuccess() {
+//        requireActivity().toast("Login Succesful")
+//    }
+//
+//    override fun onFailure(message: String) {
+//        requireActivity().toast(message)
+//    }
 
 
 
