@@ -44,6 +44,15 @@
         <action
             android:id="@+id/action_dashboardFragment_to_transferFragment"
             app:destination="@id/transferFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_recentsFragment"
+            app:destination="@id/recentsFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_myWalletFragment"
+            app:destination="@id/myWalletFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_supportFragment"
+            app:destination="@id/supportFragment" />
     </fragment>
 
     <fragment
