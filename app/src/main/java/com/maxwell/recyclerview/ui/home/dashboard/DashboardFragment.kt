@@ -63,6 +63,9 @@ class DashboardFragment : Fragment() {
             view.findNavController().navigate(R.id.action_dashboardFragment_to_recentsFragment)
 
         }
+        binding.materialCardViewOnlineTransfer.setOnClickListener {
+            view.findNavController().navigate(R.id.action_dashboardFragment_to_transferFragment)
+        }
         binding.materialCardView99.setOnClickListener {
             val intentIntegrator = IntentIntegrator(requireActivity())
             intentIntegrator.setDesiredBarcodeFormats(listOf(IntentIntegrator.QR_CODE))
@@ -115,4 +118,3 @@ class DashboardFragment : Fragment() {
 
 
 
-}

@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity(){
 
         navController.addOnDestinationChangedListener { _, destination, _ ->
 
-            if (destination.id == R.id.faqFragment || destination.id == R.id.locateUsFragment || destination.id == R.id.feedbackFragment || destination.id == R.id.callSupportFragment || destination.id == R.id.mainFragment) {
+            if (destination.id == R.id.faqFragment || destination.id == R.id.successFragment || destination.id == R.id.locateUsFragment || destination.id == R.id.feedbackFragment || destination.id == R.id.callSupportFragment || destination.id == R.id.mainFragment) {
                 binding.bottomAppBar.visibility = View.GONE
 
             } else {

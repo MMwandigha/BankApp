@@ -306,6 +306,8 @@
 
         <ImageView
             android:id="@+id/usericon"
+            android:clickable="true"
+            android:focusable="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -318,6 +320,8 @@
             android:id="@+id/notificationIcon"
             android:layout_width="24dp"
             android:layout_height="24dp"
+            android:clickable="true"
+            android:focusable="true"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
             android:src="@drawable/ic_baseline_notifications_24"
@@ -326,6 +330,8 @@
 
         <ImageView
             android:id="@+id/settingsIcon"
+            android:clickable="true"
+            android:focusable="true"
             android:layout_width="26dp"
             android:layout_height="26dp"
             android:layout_marginTop="20dp"
@@ -356,7 +362,9 @@
                 android:background="#6C7BC6">
 
                 <com.google.android.material.card.MaterialCardView
-                    android:id="@+id/materialCardView6"
+                    android:id="@+id/materialCardViewOnlineTransfer"
+                    android:clickable="true"
+                    android:focusable="true"
                     style="@style/MyCardView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -369,7 +377,6 @@
                     app:layout_constraintStart_toStartOf="parent">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:id="@+id/materialCardView"
                         android:layout_width="156dp"
                         android:layout_height="44dp"
                         android:background="#FFFFFF"
@@ -385,11 +392,11 @@
                             android:layout_marginStart="12dp"
                             android:layout_marginEnd="4dp"
                             android:src="@drawable/ic_baseline_swap_horiz_24_2"
-                            android:tint="#0A052B"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toStartOf="@+id/textView"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:tint="#0A052B" />
 
                         <TextView
                             android:id="@+id/textView"
@@ -410,12 +417,14 @@
                 <com.google.android.material.card.MaterialCardView
                     android:id="@+id/materialCardView99"
                     style="@style/MyCardView2"
+                    android:clickable="true"
+                    android:focusable="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="64dp"
                     android:layout_marginEnd="16dp"
                     app:cardElevation="20dp"
-                    app:layout_constraintBottom_toTopOf="@id/materialCardView6"
+                    app:layout_constraintBottom_toTopOf="@id/materialCardViewOnlineTransfer"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
@@ -434,11 +443,11 @@
                             android:layout_marginStart="12dp"
                             android:layout_marginEnd="4dp"
                             android:src="@drawable/ic_baseline_qr_code_scanner_24"
-                            android:tint="#0A052B"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toStartOf="@+id/textView3"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:tint="#0A052B" />
 
                         <TextView
                             android:id="@+id/textView3"
