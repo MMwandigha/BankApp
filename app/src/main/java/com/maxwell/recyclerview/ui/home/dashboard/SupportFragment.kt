@@ -25,7 +25,6 @@ class SupportFragment : Fragment() {
     private val toBottom : Animation by lazy {AnimationUtils.loadAnimation(requireContext(), R.anim.rotate_open_anim)}
 
 
-
     private var clicked = false
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -44,15 +43,12 @@ class SupportFragment : Fragment() {
 
         binding.supportfab.setOnClickListener {
             onAddButtonClicked()
-
         }
         binding.livechatfab.setOnClickListener{
             view.findNavController().navigate(R.id.action_supportFragment_to_mainFragment)
 
         }
         binding.facebookfab.setOnClickListener{
-
-
 
         }
         binding.twitterfab.setOnClickListener{
@@ -102,6 +98,7 @@ class SupportFragment : Fragment() {
         setVisibility(clicked)
         setClickable(clicked)
         setAnimation(clicked)
+
         clicked = !clicked
     }
 
@@ -149,6 +146,7 @@ class SupportFragment : Fragment() {
             binding.twitterfab.isClickable = false
         }
     }
+
 
 
 

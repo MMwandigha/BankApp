@@ -1,17 +1,19 @@
 package com.maxwell.recyclerview.ui.home
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
+import androidx.core.view.get
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.maxwell.recyclerview.R
 import com.maxwell.recyclerview.adapter.UsersAdapter
 import com.maxwell.recyclerview.adapter.listener.OnItemUserClickListener
 import com.maxwell.recyclerview.databinding.FragmentMainBinding
 import com.maxwell.recyclerview.model.UsersModel
+import kotlinx.android.synthetic.main.user_list.*
 
 
 class MainFragment : Fragment(),OnItemUserClickListener {
@@ -31,15 +33,11 @@ class MainFragment : Fragment(),OnItemUserClickListener {
         savedInstanceState: Bundle?
     ): View? {
 
-
         // Inflate the layout for this fragment
 
         binding= FragmentMainBinding.inflate(inflater,container, false)
 //        binding= FragmentMainBinding.inflate(layoutInflater)
-
         return binding.root
-
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -106,7 +104,6 @@ class MainFragment : Fragment(),OnItemUserClickListener {
 
         newArrayList = arrayListOf<UsersModel>()
         getUserdata()
-
     }
 
     private fun getUserdata() {
@@ -116,23 +113,24 @@ class MainFragment : Fragment(),OnItemUserClickListener {
         }
 
         val usersAdapter = UsersAdapter(newArrayList,this)
-
-//        binding.recyclerview.apply {
-//            layoutManager = LinearLayoutManager(requireActivity())
-//            setHasFixedSize(true)
-//            adapter = usersAdapter
-//        }
-
         binding.usersrecyclerview.layoutManager= LinearLayoutManager(requireActivity())
         binding.usersrecyclerview.setHasFixedSize(true)
         binding.usersrecyclerview.adapter=usersAdapter
 
-
     }
 
+
     override fun onItemClick(view: View, position: Int) {
-       if (view.id==R.id.cvUserData){
-           findNavController().navigate(R.id.action_mainFragment_to_secondFragment)
+       if (view.id == R.id.cvUserData){
+//           findNavController().navigate(R.id.action_mainFragment_to_secondFragment)
+           val intent = Intent(requireContext(), SecondFragment::class.java)
+           intent.putExtra("titleImage", newArrayList[position].titleImage)
+           intent.putExtra("titleName", newArrayList[position].titleName)
+           intent.putExtra("titleEmail", newArrayList[position].titleEmail)
+           intent.putExtra("titleDescription", titleDesc[position])
+           startActivity(intent)
+
+
        }
     }
 }

@@ -55,26 +55,32 @@ class RecentsFragment : Fragment() {
 
 
 
-        lineList = ArrayList()
-        lineList.add(Entry(10f, 100f ))
-        lineList.add(Entry(20f, 300f ))
-        lineList.add(Entry(30f, 200f ))
-        lineList.add(Entry(40f, 600f ))
-        lineList.add(Entry(50f, 500f ))
-        lineList.add(Entry(10f, 900f ))
 
-        lineDataSet = LineDataSet(lineList, "Count" )
+        lineList = ArrayList()
+        lineList.add(Entry(10f, 800f ))
+        lineList.add(Entry(20f, -2.50f ))
+        lineList.add(Entry(30f, -2540f ))
+        lineList.add(Entry(40f, -6999f ))
+        lineList.add(Entry(50f, -500f ))
+        lineList.add(Entry(60f, 8000f ))
+
+        lineDataSet = LineDataSet(lineList, "Transactions in USD" )
         lineData = LineData(lineDataSet)
         binding.lineChart.data = lineData
-        lineDataSet.color = Color.BLACK
-//        lineDataSet.setColors(*ColorTemplate.JOYFUL_COLORS)
-        lineDataSet.valueTextColor=Color.BLUE
+
+// Customization
+        lineDataSet.valueTextColor=Color.BLACK
         lineDataSet.valueTextSize=13f
         lineDataSet.setDrawFilled(true)
+        lineDataSet.lineWidth=3f
+
+
+        lineDataSet.color = Color.GREEN
+        lineDataSet.fillColor=Color.rgb(144,238,144)
+        lineDataSet.setCircleColor(Color.rgb(46,166,41))
 
 
     }
-
 
 
     private fun getTransactions(){
@@ -91,7 +97,10 @@ class RecentsFragment : Fragment() {
         binding.recentsrecyclerview.setHasFixedSize(true)
         binding.recentsrecyclerview.layoutManager=LinearLayoutManager(requireContext())
         binding.recentsrecyclerview.isNestedScrollingEnabled=false
+
+
     }
+
 
 
 
